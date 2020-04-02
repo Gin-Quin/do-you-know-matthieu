@@ -46,15 +46,6 @@ export default `
 	face dancing-2
 	wait 333
 
-	face got-you-2
-	wait 333
-	face got-you
-	wait 333
-	face got-you-2
-	wait 333
-	face got-you
-	wait 333
-
 	face dancing
 	wait 333
 	face dancing-2

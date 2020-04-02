@@ -309,6 +309,7 @@
 			isFullScreen = true
 		}
 	}
+	
 
 
 	function next() {
@@ -515,11 +516,9 @@
 		margin: 8px 14px;
 		padding: 14px 40px;
 		padding-top: 18px;
-		text-align: center;
 		font-weight: bold;
 		font-size: 21px;
 		color: #333;
-		/* font-size: 1.1em; */
 	}
 
 	#main[display=image] {
@@ -692,6 +691,7 @@
 		bottom: 100%;
 		margin-bottom: 6px;
 		width: 320px;
+		max-width: 60vw;
 		background: #fefefe;
 		padding: 22px 26px;
 		border-radius: 18px;

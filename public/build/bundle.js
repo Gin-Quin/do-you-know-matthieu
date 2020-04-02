@@ -471,7 +471,7 @@ var app = (function () {
 
 
     	{
-    		ask: "Qu'est-ce qui se passe quand Matthieu se met un coton-tige dans l'oreille gauche ?",
+    		ask: "Que se passe-t-il quand Matthieu se met un coton-tige dans l'oreille gauche ?",
     		answers: [
     			{
     				value: "Ça lui lave l'oreille droite",
@@ -566,7 +566,7 @@ var app = (function () {
     				value: "La beauté",
     				valid: true,
     				action: `
-					say Hehe c'est mon péché-mignon, je suis attiré par les personnes que je trouve belles.
+					say Héhé oui, je suis attiré par les personnes que je trouve belles.
 				`,
     			},
     			{
@@ -909,15 +909,6 @@ var app = (function () {
 	face dancing-2
 	wait 333
 
-	face got-you-2
-	wait 333
-	face got-you
-	wait 333
-	face got-you-2
-	wait 333
-	face got-you
-	wait 333
-
 	face dancing
 	wait 333
 	face dancing-2
@@ -1090,23 +1081,23 @@ var app = (function () {
     			attr_dev(img, "id", "story-bitmoji-img");
     			if (img.src !== (img_src_value = `bitmoji/full-${/*face*/ ctx[4]}.png`)) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "alt", "");
-    			attr_dev(img, "class", "svelte-gtli2u");
+    			attr_dev(img, "class", "svelte-x7wrfo");
     			add_location(img, file, 103, 3, 2193);
     			attr_dev(div0, "id", "story-bitmoji-talk");
-    			attr_dev(div0, "class", "svelte-gtli2u");
+    			attr_dev(div0, "class", "svelte-x7wrfo");
     			add_location(div0, file, 104, 3, 2265);
     			attr_dev(div1, "id", "story-triangle-talk");
     			attr_dev(div1, "style", div1_style_value = `margin-left: ${/*trianglePosition*/ ctx[8]}px;`);
-    			attr_dev(div1, "class", "svelte-gtli2u");
+    			attr_dev(div1, "class", "svelte-x7wrfo");
     			add_location(div1, file, 105, 3, 2315);
     			attr_dev(div2, "id", "story-bitmoji");
     			attr_dev(div2, "show", /*showFace*/ ctx[9]);
     			attr_dev(div2, "animation", /*animation*/ ctx[10]);
     			attr_dev(div2, "style", div2_style_value = `transform: scaleX(${/*scaleX*/ ctx[11]}) scaleX(${/*scaleY*/ ctx[12]}) rotate(${/*rotate*/ ctx[13]}) translateX(${/*translateX*/ ctx[14]}) translateY(${/*translateY*/ ctx[15]})`);
-    			attr_dev(div2, "class", "svelte-gtli2u");
+    			attr_dev(div2, "class", "svelte-x7wrfo");
     			add_location(div2, file, 97, 2, 1995);
     			attr_dev(div3, "id", "story");
-    			attr_dev(div3, "class", "svelte-gtli2u");
+    			attr_dev(div3, "class", "svelte-x7wrfo");
     			add_location(div3, file, 96, 1, 1976);
     		},
     		m: function mount(target, anchor) {
@@ -1216,17 +1207,17 @@ var app = (function () {
     			img = element("img");
     			t8 = space();
     			div3 = element("div");
-    			attr_dev(div0, "class", "filler svelte-gtli2u");
+    			attr_dev(div0, "class", "filler svelte-x7wrfo");
     			attr_dev(div0, "style", div0_style_value = `width: ${100 * (/*step*/ ctx[3] + 1) / pages.length}%`);
     			add_location(div0, file, 50, 2, 1080);
     			attr_dev(div1, "id", "progress-bar");
-    			attr_dev(div1, "class", "svelte-gtli2u");
+    			attr_dev(div1, "class", "svelte-x7wrfo");
     			add_location(div1, file, 49, 1, 1054);
     			attr_dev(header, "id", "header");
-    			attr_dev(header, "class", header_class_value = "" + (null_to_empty("animated " + /*headerAnimation*/ ctx[7]) + " svelte-gtli2u"));
+    			attr_dev(header, "class", header_class_value = "" + (null_to_empty("animated " + /*headerAnimation*/ ctx[7]) + " svelte-x7wrfo"));
     			add_location(header, file, 57, 1, 1212);
     			attr_dev(main, "id", "main");
-    			attr_dev(main, "class", "animated bounceInRight svelte-gtli2u");
+    			attr_dev(main, "class", "animated bounceInRight svelte-x7wrfo");
     			attr_dev(main, "display", main_display_value = /*page*/ ctx[6].display || "text");
     			add_location(main, file, 64, 1, 1305);
     			if (img.src !== (img_src_value = `bitmoji/face-${/*face*/ ctx[4]}.png`)) attr_dev(img, "src", img_src_value);
@@ -1236,11 +1227,11 @@ var app = (function () {
     			attr_dev(div2, "id", "bitmoji");
     			add_location(div2, file, 86, 2, 1798);
     			attr_dev(div3, "id", "bitmoji-talk");
-    			attr_dev(div3, "class", "svelte-gtli2u");
+    			attr_dev(div3, "class", "svelte-x7wrfo");
     			add_location(div3, file, 90, 2, 1892);
     			attr_dev(footer, "id", "footer");
     			attr_dev(footer, "furtive", footer_furtive_value = !/*say*/ ctx[5]);
-    			attr_dev(footer, "class", "animated bounceInUp svelte-gtli2u");
+    			attr_dev(footer, "class", "animated bounceInUp svelte-x7wrfo");
     			add_location(footer, file, 85, 1, 1732);
     		},
     		m: function mount(target, anchor) {
@@ -1276,7 +1267,7 @@ var app = (function () {
     			if (dirty[0] & /*step*/ 8 && t1_value !== (t1_value = /*step*/ ctx[3] + 1 + "")) set_data_dev(t1, t1_value);
     			if (dirty[0] & /*page*/ 64 && t5_value !== (t5_value = /*page*/ ctx[6].ask + "")) set_data_dev(t5, t5_value);
 
-    			if (dirty[0] & /*headerAnimation*/ 128 && header_class_value !== (header_class_value = "" + (null_to_empty("animated " + /*headerAnimation*/ ctx[7]) + " svelte-gtli2u"))) {
+    			if (dirty[0] & /*headerAnimation*/ 128 && header_class_value !== (header_class_value = "" + (null_to_empty("animated " + /*headerAnimation*/ ctx[7]) + " svelte-x7wrfo"))) {
     				attr_dev(header, "class", header_class_value);
     			}
 
@@ -1364,11 +1355,11 @@ var app = (function () {
     			attr_dev(div0, "id", "bitmoji");
     			add_location(div0, file, 40, 2, 878);
     			attr_dev(div1, "id", "bitmoji-talk");
-    			attr_dev(div1, "class", "svelte-gtli2u");
+    			attr_dev(div1, "class", "svelte-x7wrfo");
     			add_location(div1, file, 44, 2, 972);
     			attr_dev(footer, "id", "footer");
     			attr_dev(footer, "furtive", footer_furtive_value = !/*say*/ ctx[5]);
-    			attr_dev(footer, "class", "animated bounceInUp svelte-gtli2u");
+    			attr_dev(footer, "class", "animated bounceInUp svelte-x7wrfo");
     			add_location(footer, file, 39, 1, 812);
     		},
     		m: function mount(target, anchor) {
@@ -1453,35 +1444,35 @@ var app = (function () {
     			if (img0.src !== (img0_src_value = "bitmoji/full-angel.png")) attr_dev(img0, "src", img0_src_value);
     			attr_dev(img0, "height", "104px");
     			attr_dev(img0, "alt", "");
-    			attr_dev(img0, "class", "svelte-gtli2u");
+    			attr_dev(img0, "class", "svelte-x7wrfo");
     			add_location(img0, file, 5, 2, 70);
-    			attr_dev(div0, "class", "animated bounceInDown svelte-gtli2u");
+    			attr_dev(div0, "class", "animated bounceInDown svelte-x7wrfo");
     			add_location(div0, file, 7, 3, 161);
     			attr_dev(div1, "id", "matthieu");
-    			attr_dev(div1, "class", "animated bounceInUp svelte-gtli2u");
+    			attr_dev(div1, "class", "animated bounceInUp svelte-x7wrfo");
     			add_location(div1, file, 8, 3, 217);
     			attr_dev(div2, "id", "title");
-    			attr_dev(div2, "class", "svelte-gtli2u");
+    			attr_dev(div2, "class", "svelte-x7wrfo");
     			add_location(div2, file, 6, 2, 141);
     			attr_dev(img1, "id", "demon");
     			if (img1.src !== (img1_src_value = "bitmoji/full-demon.png")) attr_dev(img1, "src", img1_src_value);
     			attr_dev(img1, "height", "104px");
     			attr_dev(img1, "alt", "");
-    			attr_dev(img1, "class", "svelte-gtli2u");
+    			attr_dev(img1, "class", "svelte-x7wrfo");
     			add_location(img1, file, 10, 2, 291);
-    			attr_dev(h1, "class", "svelte-gtli2u");
+    			attr_dev(h1, "class", "svelte-x7wrfo");
     			add_location(h1, file, 4, 1, 63);
     			attr_dev(button, "id", "start");
-    			attr_dev(button, "class", "game-music svelte-gtli2u");
+    			attr_dev(button, "class", "game-music svelte-x7wrfo");
     			add_location(button, file, 14, 2, 386);
     			attr_dev(div3, "id", "menu");
-    			attr_dev(div3, "class", "svelte-gtli2u");
+    			attr_dev(div3, "class", "svelte-x7wrfo");
     			add_location(div3, file, 13, 1, 368);
     			attr_dev(img2, "id", "resting");
     			if (img2.src !== (img2_src_value = "bitmoji/full-read-with-cat.png")) attr_dev(img2, "src", img2_src_value);
     			attr_dev(img2, "width", "180px");
     			attr_dev(img2, "alt", "");
-    			attr_dev(img2, "class", "svelte-gtli2u");
+    			attr_dev(img2, "class", "svelte-x7wrfo");
     			add_location(img2, file, 34, 1, 703);
     		},
     		m: function mount(target, anchor, remount) {
@@ -1539,7 +1530,7 @@ var app = (function () {
     		c: function create() {
     			span = element("span");
     			t = text(t_value);
-    			attr_dev(span, "class", "index-letter svelte-gtli2u");
+    			attr_dev(span, "class", "index-letter svelte-x7wrfo");
     			add_location(span, file, 77, 5, 1617);
     		},
     		m: function mount(target, anchor) {
@@ -1573,7 +1564,7 @@ var app = (function () {
     			img = element("img");
     			if (img.src !== (img_src_value = /*answer*/ ctx[32].image)) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "alt", "");
-    			attr_dev(img, "class", "svelte-gtli2u");
+    			attr_dev(img, "class", "svelte-x7wrfo");
     			add_location(img, file, 75, 5, 1568);
     		},
     		m: function mount(target, anchor) {
@@ -1626,7 +1617,7 @@ var app = (function () {
     			t1 = text(t1_value);
     			t2 = space();
     			attr_dev(button, "status", button_status_value = /*answer*/ ctx[32].status || "");
-    			attr_dev(button, "class", "svelte-gtli2u");
+    			attr_dev(button, "class", "svelte-x7wrfo");
     			add_location(button, file, 70, 3, 1437);
     		},
     		m: function mount(target, anchor, remount) {
@@ -1753,7 +1744,7 @@ var app = (function () {
     			if_block_anchor = empty();
     			attr_dev(div, "id", "fader");
     			attr_dev(div, "status", /*fader*/ ctx[1]);
-    			attr_dev(div, "class", "svelte-gtli2u");
+    			attr_dev(div, "class", "svelte-x7wrfo");
     			add_location(div, file, 0, 0, 0);
     		},
     		l: function claim(nodes) {

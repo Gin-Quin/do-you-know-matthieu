@@ -117,7 +117,7 @@ export const pages = [
 
 
 	{
-		ask: "Qu'est-ce qui se passe quand Matthieu se met un coton-tige dans l'oreille gauche ?",
+		ask: "Que se passe-t-il quand Matthieu se met un coton-tige dans l'oreille gauche ?",
 		answers: [
 			{
 				value: "Ça lui lave l'oreille droite",
@@ -212,7 +212,7 @@ export const pages = [
 				value: "La beauté",
 				valid: true,
 				action: `
-					say Hehe c'est mon péché-mignon, je suis attiré par les personnes que je trouve belles.
+					say Héhé oui, je suis attiré par les personnes que je trouve belles.
 				`,
 			},
 			{
