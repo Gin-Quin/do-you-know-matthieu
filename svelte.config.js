@@ -1,5 +1,5 @@
-import adapter from '@sveltejs/adapter-auto';
-import { vitePreprocess } from '@sveltejs/vite-plugin-svelte';
+import adapter from "@sveltejs/adapter-cloudflare"
+import { vitePreprocess } from "@sveltejs/vite-plugin-svelte"
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
@@ -8,11 +8,31 @@ const config = {
 	preprocess: vitePreprocess(),
 
 	kit: {
+		prerender: {
+			entries: ["*"],
+			crawl: true,
+		},
 		// adapter-auto only supports some environments, see https://kit.svelte.dev/docs/adapter-auto for a list.
 		// If your environment is not supported, or you settled on a specific environment, switch out the adapter.
 		// See https://kit.svelte.dev/docs/adapters for more information about adapters.
-		adapter: adapter()
-	}
-};
+		adapter: adapter({
+			routes: {
+				include: ["/api/*"],
+				exclude: [
+					"/_app/*",
+					"/bitmoji/*",
+					"/fonts/*",
+					"/img/*",
+					"/animate.css",
+					"/favicon.png",
+					"/global.css",
+					"/_worker.js",
+					"/_worker.js.map",
+					"/_headers",
+				],
+			},
+		}),
+	},
+}
 
-export default config;
+export default config
