@@ -609,6 +609,9 @@
 	}
 
 	#main[data-display="image"] {
+		display: grid;
+		gap: 8px;
+		grid-template-columns: 1fr 1fr;
 		flex-direction: row;
 		align-content: start;
 		text-align: center;
@@ -621,7 +624,7 @@
 		font-family: CrimsonText;
 		font-size: 18px;
 		font-weight: bold;
-		width: calc(48% - 12px);
+		/* width: calc(48% - 12px); */
 		background: #fefefe;
 		flex-shrink: 0;
 		flex-wrap: nowrap;
@@ -637,6 +640,7 @@
 		/* width: 100%; */
 		width: 100%;
 		height: 100%;
+		object-fit: cover;
 		background: white;
 	}
 
@@ -842,6 +846,12 @@
 		}
 		75% {
 			transform: translateY(10px);
+		}
+	}
+
+	@media (max-width: 500px) {
+		#main[data-display="image"] {
+			grid-template-columns: 1fr;
 		}
 	}
 </style>

@@ -11,12 +11,12 @@ export default `
 	face disappointed
 		say Tu me connais donc si mal ??
 	face drama
-		say Je savais que je ne méritais pas d'avoir un vrai pote.
-		say Un pote qui me <b>*connaisse*</b>, putain.
+		say Je savais que je ne méritais pas d'avoir un.e vrai pote.
+		say Quelqu'un qui me <b>*connaisse*</b>, putain.
 		say Est-ce que c'est trop demander ?
 		say Est-ce que je dois crier le nom de mon film préféré sur tous les toits...?
 	face drama-2
-		say Je pensais que <b>*toi*</b> tu serais celui qui... qui...
+		say Je pensais que <b>*toi*</b> tu serais la personne qui... qui...
 		say Mais tout ça, ce n'était que des mensonges !
 		say Rien que des mensonges...
 	face crying
@@ -34,7 +34,7 @@ export default `
 		say Tu as cru que j'étais vraiment triste, hein ?
 	face bro
 		say Aucun des deux films n'était mon préféré !
-		say Tu étais obligé de te tromper !
+		say Tu étais obligé.e de te tromper !
 	
 	say
 	face got-you-2
@@ -62,10 +62,8 @@ export default `
 	
 	face pole-dance-1
 		say J'espère que tu ne m'en veux pas.
-		say En vrai, tout ça c'est la faute de ces sondages Facebook et Instagram.
 	face pole-dance-2
-		say Ils m'affligeaient tellement, je devais faire quelque chose.
-		say Et puis je sais bien que c'est toi le pote de ma vie.
+		say Je sais bien que c'est toi le pote de ma vie.
 		say Toi et personne d'autre.
 	face pole-dance-1
 		say Et après ma mort, quand je ressusciterai en escargot...
@@ -79,7 +77,7 @@ export default `
 		say ... avec une coquille sur le dos lourde comme un supplice grec...
 		say ... que tu ouvres tes yeux télémétriques et que tu vois devant toi...
 		say ... avec le même corps gluant et la même coquille sur le dos...
-		say ... et toujours ce sourire con sur son visage de demeuré...
+		say ... et toujours ce sourire idiot sur son visage de demeuré...
 		say ... cette fameuse personne qui n'a jamais pu retenir le nom de ton film préféré...
 		say ... à ce moment-là, tu sais qu'en face de toi...
 	face pole-dance-2
@@ -94,7 +92,7 @@ export default `
 	fade
 	face fly-on-bird
 		say Bon.
-		say J'espère que tu t'es bien amusé, pote de ma vie.
+		say J'espère que tu t'es bien amusé.e.
 	rotate -20deg
 		say Mais moi j'ai de la merde à gérer.
 		say Et je suis sûr que toi aussi.
