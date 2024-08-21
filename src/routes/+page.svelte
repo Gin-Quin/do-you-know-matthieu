@@ -46,7 +46,7 @@
 	let hasAnswered = false
 	let totalCurrentAnswers = 0
 	let page: Page | null = null
-	let actionCallbackId = 0
+	let actionCallbackId: 0 | ReturnType<typeof setTimeout> = 0
 	let headerAnimation = "bounceInDown"
 	let speakDirection = "right"
 	let trianglePosition = 0
@@ -552,6 +552,7 @@
 		flex: 1;
 		overflow: auto;
 		margin-bottom: 12px;
+		padding: 0 8px;
 		padding-bottom: 60px;
 	}
 	@media screen and (max-height: 600px) {
@@ -608,7 +609,8 @@
 	}
 
 	#main[data-display="image"] {
-		display: flex;
+		flex-direction: row;
+		align-content: start;
 		text-align: center;
 		flex-wrap: wrap;
 	}

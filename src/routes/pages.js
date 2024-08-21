@@ -21,8 +21,8 @@ export const pages = [
 		],
 		outro: `
 			face wink
-			say Bien joué frère, tu gères ! Question suivante !
-		`
+			say Bien joué, tu gères ! Question suivante !
+		`,
 	},
 
 	{
@@ -50,35 +50,34 @@ export const pages = [
 		outro: `
 			say Yeah!
 			face big-smile
-			say Seul un super pote peut savoir que j'ai exactement 28 dents.
+			say Seul un.e super pote peut savoir que j'ai exactement 28 dents.
 			face smile
-			say Tu es vraiment un super pote. Je t'adore. Continue comme ça.
-		`
+			say Je t'adore. Continue comme ça.
+		`,
 	},
 
-	{
-		ask: "Quel âge a Matthieu ?",
-		display: "image",
-		answers: [
-			{
-				value: "Son nombre de dents en années s'il était né en Corée",
-				image: "img/teeth-2.png",
-				valid: true,
-			},
-			{
-				value: "Trois ans",
-				image: "img/baby-3.png",
-			},
-		],
-		outro: `
-			say Encore bon !
-			say En Corée, on a un an le jour de notre naissance.
-			say Les premières questions sont les plus faciles.
-			face smile
-			say On continue.
-		`
-	},
-
+	// {
+	// 	ask: "Quel âge a Matthieu ?",
+	// 	display: "image",
+	// 	answers: [
+	// 		{
+	// 			value: "Son nombre de dents en années s'il était né en Corée",
+	// 			image: "img/teeth-2.png",
+	// 			valid: true,
+	// 		},
+	// 		{
+	// 			value: "Trois ans",
+	// 			image: "img/baby-3.png",
+	// 		},
+	// 	],
+	// 	outro: `
+	// 		say Encore bon !
+	// 		say En Corée, on a un an le jour de notre naissance.
+	// 		say Les premières questions sont les plus faciles.
+	// 		face smile
+	// 		say On continue.
+	// 	`
+	// },
 
 	{
 		ask: "À quelle vitesse Matthieu peut-il courir ?",
@@ -101,7 +100,8 @@ export const pages = [
 				image: "img/plane.png",
 			},
 			{
-				value: "Il peut rejoindre la boulangerie la plus proche en moins de 5 minutes top chrono pour s'acheter un fraisier",
+				value:
+					"Il peut rejoindre la boulangerie la plus proche en moins de 5 minutes top chrono pour s'acheter un fraisier",
 				image: "img/boulangerie.png",
 				valid: true,
 			},
@@ -112,9 +112,45 @@ export const pages = [
 			say Je suis un prédateur.
 			say Même au fond de leur terrier...
 			say Les pâtisseries n'ont aucune chance.
-		`
+		`,
 	},
 
+	{
+		ask: "Matthieu est-il droitier ou gaucher ?",
+		display: "image",
+		answers: [
+			{
+				value: "Il est droitier",
+				image: "img/right-arm.png",
+				valid: true,
+				action: `
+					face big-smile
+					say Yeees, trop fort.e !
+				`,
+			},
+			{
+				value: "Il n'est pas gaucher",
+				image: "img/right-arm.png",
+				valid: true,
+			},
+			{
+				value: "Il a trois bras",
+				image: "img/three-arms.png",
+				action: `
+					face thoughtful
+					say Hmmm, le troisième bras c'est une métaphore ?
+				`,
+			},
+		],
+		outro: `
+			face big-smile
+			say Yeees, trop fort.e !
+			face smile
+			say On ne t'arrête pas, hein ?
+			face wink
+			say Continue comme ça.
+		`,
+	},
 
 	{
 		ask: "Que se passe-t-il quand Matthieu se met un coton-tige dans l'oreille gauche ?",
@@ -124,7 +160,7 @@ export const pages = [
 				action: `
 					face smile
 					say Ce serait drôle, mais non.
-				`
+				`,
 			},
 
 			{
@@ -133,7 +169,7 @@ export const pages = [
 				action: `
 					face smile
 					say Indéniablement.
-				`
+				`,
 			},
 
 			{
@@ -141,7 +177,7 @@ export const pages = [
 				action: `
 					face eye-right
 					say Pas que je sache.
-				`
+				`,
 			},
 
 			{
@@ -152,18 +188,19 @@ export const pages = [
 					say Ouais, c'est étrange mais j'ai ce réflexe.
 					face standard
 					say Une sombre histoire de trompe d'Eustache.
-					face super-cool
-					say Spéciale dédi à <b>Nique ta crotte</b> !
-					face standard
-				`
+				`,
 			},
 		],
 
 		outro: `
-			say Next.
-		`
+			say Ok, maintenant on arrive aux questions philosophiques...
+			face still
+			say Ça devient sérieux.
+			say Tu t'apprêtes à rentrer dans mon âme.
+			face standard
+			say Prêt.e pour ce grand voyage intellectuel ?
+		`,
 	},
-
 
 	{
 		ask: "Matthieu préfère-t-il...",
@@ -191,17 +228,21 @@ export const pages = [
 			face angry
 			say On passe aux choses sérieuses maintenant.
 			face still
-			say Seul un pote sur trois est arrivé aussi loin que toi sans se tromper.
-			say Ça montre déjà que tu es un giga-super pote de la mort, mais...
+			say Seule une personne sur trois est arrivée aussi loin que toi sans se tromper.
+			say Ça montre déjà que tu es un.e giga-super pote de la mort, mais...
 			face angry
 			say Il va falloir montrer que tu vaux mieux que tous les autres !
 			face thinking
-			say La question suivante est à <b>choix multiple</b>. Une seule mauvaise réponse... et c'est <b>l'élimination</b>.
-			face standard
-			say Evidemment, je ne te dis pas combien il y a de bonnes réponses.
+			say La question suivante est à <b>choix multiple</b>. Une seule mauvaise réponse, et c'est...
+			face super-cool
+			say <b>... l'élimination</b>.
+			face dubitative
+			say On va essayer de ne pas en arriver là, hein ?
 			face wink
+			say Evidemment, je ne te dis pas <i>combien</i> il y a de bonnes réponses.
+			face big-smile
 			say Je compte sur toi. Bonne chance !
-		`
+		`,
 	},
 
 	{
@@ -253,7 +294,7 @@ export const pages = [
 			say Seul 38% des potes sont arrivés jusque-là.
 			face wink
 			say Tu déchires tout. Question suivante !
-		`
+		`,
 	},
 
 	{
@@ -294,15 +335,26 @@ export const pages = [
 			face standard
 			say En revanche, je n'aime pas manger du caca.
 			say Question suivante.
-		`
+		`,
 	},
 
 	{
-		ask: "Est-ce que Matthieu s'ennuie pendant le confinement ?",
+		ask: "Matthieu est-il le plus beau ?",
 		answers: [
 			{
 				value: "Oui",
 				valid: true,
+			},
+			{
+				value: "Non",
+				action: `
+					face dubitative
+					say Attention à ce que tu vas dire...
+					say N'oublie pas que c'est moi qui ai créé ce quizz.
+					say Allez, parce que c'est toi...
+					face wink
+					say Je te donne une nouvelle chance.
+				`,
 			},
 		],
 		outro: `
@@ -316,12 +368,10 @@ export const pages = [
 			say Si tu y arrives...
 			face standard
 			say Cela signifie que tu es la personne qui me connaît le mieux au monde.
-			say L'élu.
+			say L'élu.e.
 			say ...
-			say Je veux croire en toi.
-		`
+		`,
 	},
-
 
 	{
 		ask: "Si Matthieu avait un pouvoir, ce serait...",
@@ -333,7 +383,7 @@ export const pages = [
 					say Yes! Voler, quel bonheur ce serait.
 					face eye-left
 					say Mmmmh...
-				`
+				`,
 			},
 			{
 				value: "Se métamorphoser",
@@ -342,7 +392,7 @@ export const pages = [
 					say Je pourrais faire tellement de choses si je pouvais me métamorphoser.
 					face eye-left
 					say Tellement.
-				`
+				`,
 			},
 			{
 				value: "Se téléporter",
@@ -351,15 +401,14 @@ export const pages = [
 					say Plus de transports en commun !
 					say Plus d'Uber à payer pour rentrer de soirée !
 					say Le pouvoir du voyageur.
-				`
+				`,
 			},
 		],
 		outro: `
 			face smile
 			say Bravo.
-		`
+		`,
 	},
-
 
 	{
 		ask: "Quel instrument de musique Matthieu sait-il jouer ?",
@@ -372,7 +421,7 @@ export const pages = [
 				image: "img/trumpet.png",
 				action: `
 					say Yes!
-				`
+				`,
 			},
 			{
 				value: "De la flûte à bec",
@@ -380,7 +429,7 @@ export const pages = [
 				image: "img/flute.png",
 				action: `
 					say Exact.
-				`
+				`,
 			},
 			{
 				value: "Du piano",
@@ -388,7 +437,7 @@ export const pages = [
 				image: "img/piano.png",
 				action: `
 					say Bien vu.
-				`
+				`,
 			},
 			{
 				value: "Du triangle",
@@ -397,7 +446,7 @@ export const pages = [
 				action: `
 					face super-cool
 					say Je suis un pro du triangle.
-				`
+				`,
 			},
 		],
 		outro: `
@@ -412,30 +461,31 @@ export const pages = [
 			face still
 			say Et tu n'auras aucun indice !
 			face standard
-			say Mais je crois en toi.
-			face smile
-			say Tu peux le faire !
-		`
+			say Je veux croire en toi.
+			face still
+			say Après tout ce qu'on a vécu ensemble...
+			face angry
+			say Ne me déçois pas !
+		`,
 	},
-	
 
 	{
 		ask: "Quel est le livre préféré de Matthieu ?",
 		answers: [
-			{ value: "L'insoutenable légèreté de l'être", valid: true},
-			{ value: "Bambi", valid: true},
-			{ value: "La promesse de l'aube", valid: true},
-			{ value: "Les frères Karamazov", valid: true},
-			{ value: "The last samurai", valid: true},
-			{ value: "Ada ou l'ardeur", valid: true},
-			{ value: "Le clan des Otori", valid: true},
-			{ value: "Océan mer", valid: true},
-			{ value: "Okilélé", valid: true},
-			{ value: "Les souffrances du jeune Werther", valid: true},
-			{ value: "Les liaisons dangereuses", valid: true},
-			{ value: "Le chat Murr", valid: true},
-			{ value: "L'assassin royal", valid: true},
-			{ value: "Fanfan", valid: true},
+			{ value: "L'insoutenable légèreté de l'être", valid: true },
+			{ value: "Bambi", valid: true },
+			{ value: "La promesse de l'aube", valid: true },
+			{ value: "Les frères Karamazov", valid: true },
+			{ value: "The last samurai", valid: true },
+			{ value: "Ada ou l'ardeur", valid: true },
+			{ value: "Le clan des Otori", valid: true },
+			{ value: "Océan mer", valid: true },
+			{ value: "Okilélé", valid: true },
+			{ value: "Les souffrances du jeune Werther", valid: true },
+			{ value: "Les liaisons dangereuses", valid: true },
+			{ value: "Le chat Murr", valid: true },
+			{ value: "L'assassin royal", valid: true },
+			{ value: "Fanfan", valid: true },
 		],
 		outro: `
 			face gosh
@@ -449,26 +499,27 @@ export const pages = [
 			say Tu as fait tout ce chemin sans la plus petite erreur, wow.
 			say Peut-être que...
 			face still
-			say Peut-être que tu es vraiment l'élu.
-			say Le pote de ma vie.
+			say Peut-être que tu es vraiment l'élu.e ?
+			say La plus belle rencontre de ma vie, ce serait...
 			say ...
 			face standard
-			say Il ne te reste qu'une question.
+			say ... toi ?
 			face still
+			say Il ne te reste qu'une seule question.
+			face dubitative
 			say <b>Une !</b>
-			face wink
-			say Elle est plutôt facile.
 			face standard
+			say Et elle est plutôt facile.
+			face wink
 			say Rends-moi fier.
-		`
+		`,
 	},
-
 
 	{
 		ask: "Quel est le film préféré de Matthieu ?",
 		answers: [
-			{ value: "Cloud atlas", valid: false},
-			{ value: "The grand Budapest hotel", valid: false},
+			{ value: "Cloud atlas", valid: false },
+			{ value: "The grand Budapest hotel", valid: false },
 		],
 		outro: `
 			face gosh
@@ -483,6 +534,6 @@ export const pages = [
 			hide face
 			wait 1150
 			story ending
-		`
+		`,
 	},
 ]

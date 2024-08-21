@@ -1,6 +1,6 @@
 export const wrongs = [
-	"Mmmm, t'es sûr de toi là ?",
-	"Whaaa, on se calme ! Réfléchis frère. T'as tout ton temps.",
+	"Mmmm, t'es sûr.e de toi là ?",
+	"Whaaa, on se calme ! Réfléchis poto. T'as tout ton temps.",
 	"...",
 	"Non, pas vraiment.",
 	"Petit indice : essaie autre chose.",

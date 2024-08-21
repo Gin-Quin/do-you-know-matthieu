@@ -12,7 +12,7 @@ export default `
 	face wink
 	say Mais seuls ceux qui me connaissent sur le bout des doigts arriveront jusqu'à la fin !
 	face big-smile
-	say Montre-moi que tu es le meilleur de tous mes potes !
+	say Montre-moi que tu me connais comme personne !
 	face smile
 	say C'est parti !
 	startGame
