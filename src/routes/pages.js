@@ -351,8 +351,7 @@ export const pages = [
 					face dubitative
 					say Attention à ce que tu vas dire...
 					say N'oublie pas que c'est moi qui ai créé ce quizz.
-					say Allez, parce que c'est toi...
-					face wink
+					say Allez, juste parce que c'est toi...
 					say Je te donne une nouvelle chance.
 				`,
 			},
